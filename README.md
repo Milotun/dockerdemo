@@ -1,0 +1,2 @@
+# dockerdemo
+publishing docker images 
