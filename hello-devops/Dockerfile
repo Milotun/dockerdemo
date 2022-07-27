@@ -1,2 +1,8 @@
 FROM httpd:latest
-COPY * /usr/local/apache2/htdocs/
+
+ADD  entrypoint.sh /entrypoint.sh
+
+RUN  chmod +x hello.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
